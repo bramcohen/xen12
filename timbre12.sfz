@@ -1,0 +1,126 @@
+// Simplified from the Splendid Grand Piano
+//midi cc
+#define $RELEASE 72
+#define $VELTRACK 99
+//file-folder
+#define $EXT wav
+#define $PREFIX timbre12
+//////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+label_cc7=Vol
+label_cc10=Pan
+label_cc64=Sus.Pedal
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELEASE=0.35
+set_hdcc$VELTRACK=1
+//*******************************************************
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+ampeg_attack=0.0005
+ampeg_sustain=100
+ampeg_release_oncc$RELEASE=2
+amp_veltrack_oncc$VELTRACK=-100
+amp_veltrack_curvecc$VELTRACK=2
+note_polyphony=1
+off_time=0.5
+//===================================
+<group>
+lovel=1
+hivel=127
+group_volume=0
+group_label=$PREFIX
+<region> region_label=021 lokey=021 hikey=021 pitch_keycenter=021 sample=$PREFIX_A0.$EXT
+<region> region_label=022 lokey=022 hikey=022 pitch_keycenter=022 sample=$PREFIX_Bb0.$EXT
+<region> region_label=023 lokey=023 hikey=023 pitch_keycenter=023 sample=$PREFIX_B0.$EXT
+<region> region_label=024 lokey=024 hikey=024 pitch_keycenter=024 sample=$PREFIX_C1.$EXT
+<region> region_label=025 lokey=025 hikey=025 pitch_keycenter=025 sample=$PREFIX_Db1.$EXT
+<region> region_label=026 lokey=026 hikey=026 pitch_keycenter=026 sample=$PREFIX_D1.$EXT
+<region> region_label=027 lokey=027 hikey=027 pitch_keycenter=027 sample=$PREFIX_Eb1.$EXT
+<region> region_label=028 lokey=028 hikey=028 pitch_keycenter=028 sample=$PREFIX_E1.$EXT
+<region> region_label=029 lokey=029 hikey=029 pitch_keycenter=029 sample=$PREFIX_F1.$EXT
+<region> region_label=030 lokey=030 hikey=030 pitch_keycenter=030 sample=$PREFIX_Gb1.$EXT
+<region> region_label=031 lokey=031 hikey=031 pitch_keycenter=031 sample=$PREFIX_G1.$EXT
+<region> region_label=032 lokey=032 hikey=032 pitch_keycenter=032 sample=$PREFIX_Ab1.$EXT
+<region> region_label=033 lokey=033 hikey=033 pitch_keycenter=033 sample=$PREFIX_A1.$EXT
+<region> region_label=034 lokey=034 hikey=034 pitch_keycenter=034 sample=$PREFIX_Bb1.$EXT
+<region> region_label=035 lokey=035 hikey=035 pitch_keycenter=035 sample=$PREFIX_B1.$EXT
+<region> region_label=036 lokey=036 hikey=036 pitch_keycenter=036 sample=$PREFIX_C2.$EXT
+<region> region_label=037 lokey=037 hikey=037 pitch_keycenter=037 sample=$PREFIX_Db2.$EXT
+<region> region_label=038 lokey=038 hikey=038 pitch_keycenter=038 sample=$PREFIX_D2.$EXT
+<region> region_label=039 lokey=039 hikey=039 pitch_keycenter=039 sample=$PREFIX_Eb2.$EXT
+<region> region_label=040 lokey=040 hikey=040 pitch_keycenter=040 sample=$PREFIX_E2.$EXT
+<region> region_label=041 lokey=041 hikey=041 pitch_keycenter=041 sample=$PREFIX_F2.$EXT
+<region> region_label=042 lokey=042 hikey=042 pitch_keycenter=042 sample=$PREFIX_Gb2.$EXT
+<region> region_label=043 lokey=043 hikey=043 pitch_keycenter=043 sample=$PREFIX_G2.$EXT
+<region> region_label=044 lokey=044 hikey=044 pitch_keycenter=044 sample=$PREFIX_Ab2.$EXT
+<region> region_label=045 lokey=045 hikey=045 pitch_keycenter=045 sample=$PREFIX_A2.$EXT
+<region> region_label=046 lokey=046 hikey=046 pitch_keycenter=046 sample=$PREFIX_Bb2.$EXT
+<region> region_label=047 lokey=047 hikey=047 pitch_keycenter=047 sample=$PREFIX_B2.$EXT
+<region> region_label=048 lokey=048 hikey=048 pitch_keycenter=048 sample=$PREFIX_C3.$EXT
+<region> region_label=049 lokey=049 hikey=049 pitch_keycenter=049 sample=$PREFIX_Db3.$EXT
+<region> region_label=050 lokey=050 hikey=050 pitch_keycenter=050 sample=$PREFIX_D3.$EXT
+<region> region_label=051 lokey=051 hikey=051 pitch_keycenter=051 sample=$PREFIX_Eb3.$EXT
+<region> region_label=052 lokey=052 hikey=052 pitch_keycenter=052 sample=$PREFIX_E3.$EXT
+<region> region_label=053 lokey=053 hikey=053 pitch_keycenter=053 sample=$PREFIX_F3.$EXT
+<region> region_label=054 lokey=054 hikey=054 pitch_keycenter=054 sample=$PREFIX_Gb3.$EXT
+<region> region_label=055 lokey=055 hikey=055 pitch_keycenter=055 sample=$PREFIX_G3.$EXT
+<region> region_label=056 lokey=056 hikey=056 pitch_keycenter=056 sample=$PREFIX_Ab3.$EXT
+<region> region_label=057 lokey=057 hikey=057 pitch_keycenter=057 sample=$PREFIX_A3.$EXT
+<region> region_label=058 lokey=058 hikey=058 pitch_keycenter=058 sample=$PREFIX_Bb3.$EXT
+<region> region_label=059 lokey=059 hikey=059 pitch_keycenter=059 sample=$PREFIX_B3.$EXT
+<region> region_label=060 lokey=060 hikey=060 pitch_keycenter=060 sample=$PREFIX_C4.$EXT
+<region> region_label=061 lokey=061 hikey=061 pitch_keycenter=061 sample=$PREFIX_Db4.$EXT
+<region> region_label=062 lokey=062 hikey=062 pitch_keycenter=062 sample=$PREFIX_D4.$EXT
+<region> region_label=063 lokey=063 hikey=063 pitch_keycenter=063 sample=$PREFIX_Eb4.$EXT
+<region> region_label=064 lokey=064 hikey=064 pitch_keycenter=064 sample=$PREFIX_E4.$EXT
+<region> region_label=065 lokey=065 hikey=065 pitch_keycenter=065 sample=$PREFIX_F4.$EXT
+<region> region_label=066 lokey=066 hikey=066 pitch_keycenter=066 sample=$PREFIX_Gb4.$EXT
+<region> region_label=067 lokey=067 hikey=067 pitch_keycenter=067 sample=$PREFIX_G4.$EXT
+<region> region_label=068 lokey=068 hikey=068 pitch_keycenter=068 sample=$PREFIX_Ab4.$EXT
+<region> region_label=069 lokey=069 hikey=069 pitch_keycenter=069 sample=$PREFIX_A4.$EXT
+<region> region_label=070 lokey=070 hikey=070 pitch_keycenter=070 sample=$PREFIX_Bb4.$EXT
+<region> region_label=071 lokey=071 hikey=071 pitch_keycenter=071 sample=$PREFIX_B4.$EXT
+<region> region_label=072 lokey=072 hikey=072 pitch_keycenter=072 sample=$PREFIX_C5.$EXT
+<region> region_label=073 lokey=073 hikey=073 pitch_keycenter=073 sample=$PREFIX_Db5.$EXT
+<region> region_label=074 lokey=074 hikey=074 pitch_keycenter=074 sample=$PREFIX_D5.$EXT
+<region> region_label=075 lokey=075 hikey=075 pitch_keycenter=075 sample=$PREFIX_Eb5.$EXT
+<region> region_label=076 lokey=076 hikey=076 pitch_keycenter=076 sample=$PREFIX_E5.$EXT
+<region> region_label=077 lokey=077 hikey=077 pitch_keycenter=077 sample=$PREFIX_F5.$EXT
+<region> region_label=078 lokey=078 hikey=078 pitch_keycenter=078 sample=$PREFIX_Gb5.$EXT
+<region> region_label=079 lokey=079 hikey=079 pitch_keycenter=079 sample=$PREFIX_G5.$EXT
+<region> region_label=080 lokey=080 hikey=080 pitch_keycenter=080 sample=$PREFIX_Ab5.$EXT
+<region> region_label=081 lokey=081 hikey=081 pitch_keycenter=081 sample=$PREFIX_A5.$EXT
+<region> region_label=082 lokey=082 hikey=082 pitch_keycenter=082 sample=$PREFIX_Bb5.$EXT
+<region> region_label=083 lokey=083 hikey=083 pitch_keycenter=083 sample=$PREFIX_B5.$EXT
+<region> region_label=084 lokey=084 hikey=084 pitch_keycenter=084 sample=$PREFIX_C6.$EXT
+<region> region_label=085 lokey=085 hikey=085 pitch_keycenter=085 sample=$PREFIX_Db6.$EXT
+<region> region_label=086 lokey=086 hikey=086 pitch_keycenter=086 sample=$PREFIX_D6.$EXT
+<region> region_label=087 lokey=087 hikey=087 pitch_keycenter=087 sample=$PREFIX_Eb6.$EXT
+<region> region_label=088 lokey=088 hikey=088 pitch_keycenter=088 sample=$PREFIX_E6.$EXT
+<region> region_label=089 lokey=089 hikey=089 pitch_keycenter=089 sample=$PREFIX_F6.$EXT
+<region> region_label=090 lokey=090 hikey=090 pitch_keycenter=090 sample=$PREFIX_Gb6.$EXT
+<region> region_label=091 lokey=091 hikey=091 pitch_keycenter=091 sample=$PREFIX_G6.$EXT
+<region> region_label=092 lokey=092 hikey=092 pitch_keycenter=092 sample=$PREFIX_Ab6.$EXT
+<region> region_label=093 lokey=093 hikey=093 pitch_keycenter=093 sample=$PREFIX_A6.$EXT
+<region> region_label=094 lokey=094 hikey=094 pitch_keycenter=094 sample=$PREFIX_Bb6.$EXT
+<region> region_label=095 lokey=095 hikey=095 pitch_keycenter=095 sample=$PREFIX_B6.$EXT
+<region> region_label=096 lokey=096 hikey=096 pitch_keycenter=096 sample=$PREFIX_C7.$EXT
+<region> region_label=097 lokey=097 hikey=097 pitch_keycenter=097 sample=$PREFIX_Db7.$EXT
+<region> region_label=098 lokey=098 hikey=098 pitch_keycenter=098 sample=$PREFIX_D7.$EXT
+<region> region_label=099 lokey=099 hikey=099 pitch_keycenter=099 sample=$PREFIX_Eb7.$EXT
+<region> region_label=100 lokey=100 hikey=100 pitch_keycenter=100 sample=$PREFIX_E7.$EXT
+<region> region_label=101 lokey=101 hikey=101 pitch_keycenter=101 sample=$PREFIX_F7.$EXT
+<region> region_label=102 lokey=102 hikey=102 pitch_keycenter=102 sample=$PREFIX_Gb7.$EXT
+<region> region_label=103 lokey=103 hikey=103 pitch_keycenter=103 sample=$PREFIX_G7.$EXT
+<region> region_label=104 lokey=104 hikey=104 pitch_keycenter=104 sample=$PREFIX_Ab7.$EXT
+<region> region_label=105 lokey=105 hikey=105 pitch_keycenter=105 sample=$PREFIX_A7.$EXT
+<region> region_label=106 lokey=106 hikey=106 pitch_keycenter=106 sample=$PREFIX_Bb7.$EXT
+<region> region_label=107 lokey=107 hikey=107 pitch_keycenter=107 sample=$PREFIX_B7.$EXT
+<region> region_label=108 lokey=108 hikey=108 pitch_keycenter=108 sample=$PREFIX_C8.$EXT
