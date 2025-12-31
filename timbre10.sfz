@@ -7,7 +7,7 @@
 #define $PREFIX timbre10
 //////////////////////////////////////////////////////////
 <control>
-default_path=Samples/
+default_path=Samples/xen10/
 label_cc7=Vol
 label_cc10=Pan
 label_cc64=Sus.Pedal
